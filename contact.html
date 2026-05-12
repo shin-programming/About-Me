@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css/about/style.css">
+        <link rel="stylesheet" href="css/game/Cstyle.css">
+        <title>新規会員登録</title>
+    </head>
+    <body>
+        <div id="main">
+            <button id="navi_btn"></button>
+            <header>
+                <h1>新規会員登録</h1>
+                <nav id="global_navi">
+                    <ul>
+                        <li><a href="index.html">HOME</a></li>
+                        <li><a href="about.html">自分について</a></li>
+                        <li><a href="game.html">ゲーム紹介</a></li>
+                        <li><a href="webapp.html">自作Webアプリ</a></li>
+                        <li class="current"><a href="contact.html">会員登録ページ</a></li>
+                    </ul>
+                </nav>
+            </header>
+            <div id="wrapper">
+                <div id="form_box">
+                    <form id="form">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <td colspan="2">ユーザー情報入力</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>お名前</td>
+                                    <td>
+                                        <input type="text" id="sur" class="input_name" placeholder="姓" required>
+                                        <input type="text" id="name" class="input_name" placeholder="名" required>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>お名前（ふりがな）</td>
+                                    <td>
+                                        <input type="text" id="Fsur" class="input_name" placeholder="姓（ふりがな）" required>
+                                        <input type="text" id="Fname" class="input_name" placeholder="名（ふりがな）" required>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>生年月日</td>
+                                    <td>
+                                        <select id="year" class="select_birthday" required>
+                                            <option value="" disabled selected>未選択（年）</option>
+                                        </select>
+                                        <select id="month" class="input_birthday" required>
+                                            <option value="" disabled selected>未選択（月）</option>
+                                        </select>
+                                        <select id="day" class="input_birthday" required>
+                                            <option value="" disabled selected>未選択（日）</option>
+                                        </select>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>年齢（自動入力）</td>
+                                    <td>
+                                        <input type="number" id="age" class="input_birthday" min="1" placeholder="年齢（自動入力）" readonly>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>性別</td>
+                                    <td>
+                                        <input type="radio" name="gender" value="male" class="input_gender">男性
+                                        <input type="radio" name="gender" value="female" class="input_gender">女性
+                                        <input type="radio" name="gender" value="NoAns" class="input_gender" checked>未回答
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>郵便番号</td>
+                                    <td>
+                                        <input type="text" maxlength="7" id="zip" class="input_zip" placeholder="ハイフンなし" required>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>住所</td>
+                                    <td>
+                                        <input type="text" id="address1" class="input_address" placeholder="都道府県" required><br>
+                                        <input type="text" id="address2" class="input_address" placeholder="市区町村" required><br>
+                                        <input type="text" id="address3" class="input_address" placeholder="町域" required><br>
+                                        <input type="text" id="address4" class="input_address" placeholder="番地・マンション名等">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>電話番号</td>
+                                    <td>
+                                        <input type="text" minlength="10" maxlength="11" id="tel" class="input_tel" placeholder="ハイフンなし" required>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>ニックネーム</td>
+                                    <td>
+                                        <input type="text" id="username" class="input_user" placeholder="ニックネーム" required>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>メールアドレス</td>
+                                    <td>
+                                        <input type="email" id="mail" class="input_mail" placeholder="メールアドレス" required>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>メールアドレス（確認用）</td>
+                                    <td>
+                                        <input type="email" id="Kmail" class="input_mail" placeholder="メールアドレス（確認用）"
+                                            required>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>パスワード</td>
+                                    <td>
+                                        <input type="password" id="pass" class="input_pass" placeholder="パスワード" required>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>パスワード（確認用）</td>
+                                    <td>
+                                        <input type="password" id="pass" class="input_pass" placeholder="パスワード（確認用）" required>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>メールマガジンの購読</td>
+                                    <td>
+                                        <input type="checkbox" id="magazine">希望する
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>備考欄</td>
+                                    <td>
+                                        <textarea placeholder="ご要望等ありましたらなんでもご記入ください。"></textarea>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <center>
+                            <input type="submit" id="submit">
+                        </center>
+                    </form>
+                </div>
+            </div>
+            <footer>
+            </footer>
+        </div>
+    </body>
+    <script src="js/about/script.js"></script>
+    <script src="js/game/Cscript.js"></script>
+</html>
