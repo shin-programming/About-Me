@@ -74,7 +74,7 @@ input::placeholder, textarea::placeholder { color: #999; }
 
 textarea {
     width: 80%; height: 180px;
-    /* resize: none; */
+    resize: none;
 }
 
 #submit {

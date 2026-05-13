@@ -92,7 +92,7 @@ header h1 {
     /* background-color: #660; */
 }
 
-#name {
+#name, #skill, #hobby, #L_locate {
     width: 100%; height: auto;
     background-color: #660; 
     border-radius: 18px;
@@ -146,9 +146,116 @@ header h1 {
     margin-left: 9px;
 }
 
+table {
+    width: 100%;
+    padding: 3px;
+    color: #fff;
+    border-spacing: 0;
+}
+
+thead {
+    color: #000;
+    font-size: 18px;
+    text-align: center;
+    font-weight: bolder;
+    background-color: #ee0;
+}
+
+tbody {
+    font-size: 18px;
+    background-color: #333;
+}
+
+td {
+    padding: 7px 18px;
+    border-right: 1px solid #770;
+    border-bottom: 1px solid #770;
+}
+
+td:first-child {
+    /* width: 30%; */
+    text-align: center;
+    border-left: 1px solid #770;
+}
+
+/* td:last-child { width: 70%; } */
+thead td { border-radius: 18px 18px 0 0; }
+tbody tr:last-child td:last-child { border-radius: 0 0 18px 0; }
+tbody tr:last-child td:first-child { border-radius: 0 0 0 18px; }
+
+#skill h1, #hobby h1, #L_locate h1 {
+    text-align: center;
+}
+
+ul {
+    font-size: 24px;
+    margin-left: 10%;
+}
+
+#L_locate p {
+    font-size: 24px;
+}
+
+#hobby, #L_locate, table {
+    margin-top: 18px;
+}
+
+#L_locate img {
+    width: 90%; height: auto;
+    border-radius: 18px;
+}
+
+footer {
+    width: 100%; height: auto;
+    margin-top: 18px;
+    background-color: #333;
+    text-align: center;
+}
+
+footer #footer_nav {
+    background-color: #151515;
+    padding: 10px 0;
+}
+
+footer #footer_nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+footer #footer_nav li {
+    display: inline;
+    margin-left: 7px;
+    padding-left: 7px;
+    font-size: smaller;
+}
+
+footer #footer_nav li:last-child {
+    padding: 0 7px;
+}
+
+footer #footer_nav li a {
+    padding: 3px 18px;
+    color: #fff;
+    background-color: #660;
+    text-decoration: none;
+    border-radius: 18px;
+    transition: background-color 0.3s;
+}
+
+footer #footer_nav li a:hover {
+    color: #000;
+    background-color: #ff0;
+}
+
+footer small {
+    color: #eee;
+    text-align: center;
+}
+
 @media screen and (max-width: 700px) {
     header h1 {
-        font-size: 7vw;
+        font-size: 8vw;
         margin-top: 18px;
     }
 
@@ -258,5 +365,48 @@ header h1 {
         font-size: 18px;
         text-align: center;
         margin-bottom: 18px;
+    }
+
+    table {
+        width: 100%;
+    }
+
+    td {
+        display: block;
+        text-align: center;
+    }
+
+    tbody td:first-child {
+        text-align: center;
+    }
+
+    tbody td:first-child {
+        color: #fff;
+        font-weight: bolder;
+        background-color: #770;
+    }
+
+    thead td,
+    tbody tr:last-child td:last-child,
+    tbody tr:last-child td:first-child {
+        border-radius: 0;
+        border: none;
+    }
+
+    #skill h1, #hobby h1, #L_locate h1 {
+        font-size: 24px;
+    }
+
+    ul {
+        font-size: 18px;
+        margin-left: 10%;
+    }
+    
+    #L_locate p {
+        font-size: 18px;
+    }
+
+    #footer_nav {
+        display: none;
     }
 }

@@ -356,7 +356,7 @@ td:last-child { width: 70%; }
     }
 
     .top_btns {
-        margin: 7px;
+        margin: 3px;
     }
 
     #center {
@@ -371,7 +371,7 @@ td:last-child { width: 70%; }
 
     #text_box {
         width: 80%;
-        top: 57%; left: 50%;
+        top: 53%; left: 50%;
         transform: translate(-50%);
     }
 
@@ -444,7 +444,7 @@ td:last-child { width: 70%; }
     }
 
     tbody, thead {
-        font-size: 13px;
+        font-size: 12px;
     }
 
     td {
