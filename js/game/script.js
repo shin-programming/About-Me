@@ -1,4 +1,4 @@
-let page = 8;
+let page = 1;
 let max_page = 8;
 
 const left = document.getElementById('left_btn');

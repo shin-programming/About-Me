@@ -31,9 +31,10 @@ header {
 }
 
 header h1 {
-    font-size: 50px;
+    font-size: 70px;
     margin: auto 0 0 0;
     text-align: center;
+    font-family: 'Caveat', cursive;
 }
 
 #global_navi {
@@ -83,9 +84,66 @@ header h1 {
 }
 
 #wrapper {
-    width: 77%; height: 500px;
+    width: 77%; height: auto;
     margin-top: 18px;
+    display: flex;
+    color: #fff;
+    flex-direction: column;
     /* background-color: #660; */
+}
+
+#name {
+    width: 100%; height: auto;
+    background-color: #660; 
+    border-radius: 18px;
+}
+
+.about_boxes {
+    width: 100%; height: auto;
+    background-color: #660; 
+    border-radius: 18px;
+}
+
+.about_boxes h1 {
+    text-align: center;
+}
+
+.about_boxes p {
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 18px;
+}
+
+#name img {
+    width: 34%; height: auto;
+    float: left;
+    margin: 18px;
+    border-radius: 18px;
+}
+
+#name_furi {
+    text-align: right;
+    margin: 0 18px 18px 0;
+}
+
+
+#about {
+    font-size: 24px;
+}
+
+#bio, #location, #group {
+    width: 100%; height: auto;
+    display: flex;
+    margin-top: 18px;
+    flex-direction: row;
+}
+
+#locate_past, #school, #birth {
+    margin-right: 9px;
+}
+
+#locate_current, #work, #blood {
+    margin-left: 9px;
 }
 
 @media screen and (max-width: 700px) {
@@ -176,5 +234,29 @@ header h1 {
 
     #wrapper {
         width: 95%;
+    }
+
+    #name img {
+        width: 90%;
+        float: none;
+    }
+
+    #name h1, #name p {
+        margin-left: 18px;
+    }
+
+    #name p {
+        font-size: 18px;
+    }
+
+    .about_boxes h1 {
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .about_boxes p {
+        font-size: 18px;
+        text-align: center;
+        margin-bottom: 18px;
     }
 }
