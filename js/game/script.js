@@ -69,9 +69,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
     official.addEventListener('click', () => window.open('https://endfield.gryphline.com/ja-jp', '_blank'));
     Fofficial.addEventListener('click', () => window.open('https://endfield.gryphline.com/ja-jp', '_blank'));
-    register.addEventListener('click', () => window.open('contact.html'));
-    Fregister.addEventListener('click', () => window.open('contact.html'));
-    Fabout.addEventListener('click', () => window.open('index.html'));
+    register.addEventListener('click', () => window.location.href = 'contact.html');
+    Fregister.addEventListener('click', () => window.location.href = 'contact.html');
+    Fabout.addEventListener('click', () => window.location.href = 'index.html');
 });
 
 function page_move() {

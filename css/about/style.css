@@ -17,7 +17,7 @@ body {
 ::-webkit-scrollbar-thumb:hover { background-color: #ee0; }
 
 #main {
-    width: 100vw; height: 1000px;
+    width: 100vw; height: auto;
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -64,12 +64,12 @@ header h1 {
     padding: 18px;
     color: #fff;
     display: block;
+    font-size: 24px;
     border-radius: 18px;
     font-weight: bolder;
-    font-size: 24px;
+    transition: all 0.3s;
     text-decoration: none;
     background-color: #660;
-    transition: background-color 0.3s;
 }
 
 
@@ -85,28 +85,25 @@ header h1 {
 
 #wrapper {
     width: 77%; height: auto;
-    margin-top: 18px;
     display: flex;
     color: #fff;
+    margin-top: 18px;
     flex-direction: column;
-    /* background-color: #660; */
 }
 
 #name, #skill, #hobby, #L_locate {
     width: 100%; height: auto;
-    background-color: #660; 
     border-radius: 18px;
+    background-color: #660; 
 }
 
 .about_boxes {
     width: 100%; height: auto;
-    background-color: #660; 
     border-radius: 18px;
+    background-color: #660; 
 }
 
-.about_boxes h1 {
-    text-align: center;
-}
+.about_boxes h1 { text-align: center; }
 
 .about_boxes p {
     font-size: 24px;
@@ -127,9 +124,7 @@ header h1 {
 }
 
 
-#about {
-    font-size: 24px;
-}
+#about { font-size: 24px; }
 
 #bio, #location, #group {
     width: 100%; height: auto;
@@ -138,13 +133,8 @@ header h1 {
     flex-direction: row;
 }
 
-#locate_past, #school, #birth {
-    margin-right: 9px;
-}
-
-#locate_current, #work, #blood {
-    margin-left: 9px;
-}
+#locate_past, #school, #birth { margin-right: 9px; }
+#locate_current, #work, #blood { margin-left: 9px; }
 
 table {
     width: 100%;
@@ -173,54 +163,68 @@ td {
 }
 
 td:first-child {
-    /* width: 30%; */
     text-align: center;
     border-left: 1px solid #770;
 }
 
-/* td:last-child { width: 70%; } */
 thead td { border-radius: 18px 18px 0 0; }
 tbody tr:last-child td:last-child { border-radius: 0 0 18px 0; }
 tbody tr:last-child td:first-child { border-radius: 0 0 0 18px; }
-
-#skill h1, #hobby h1, #L_locate h1 {
-    text-align: center;
-}
+#skill h1, #hobby h1, #L_locate h1 { text-align: center; }
 
 ul {
     font-size: 24px;
     margin-left: 10%;
 }
 
-#L_locate p {
-    font-size: 24px;
-}
-
-#hobby, #L_locate, table {
-    margin-top: 18px;
-}
+#L_locate p { font-size: 24px; }
+#hobby, #L_locate, table { margin-top: 18px; }
 
 #L_locate img {
     width: 90%; height: auto;
     border-radius: 18px;
 }
 
+#Wmain { width: 100%; }
+#Wmain p { font-size: 18px; }
+#pdf { width: 90%; height: 700px; }
+
+#danger {
+    color: #a33;
+    font-weight: bolder;
+}
+
+#webapp_btn {
+    width: 180px; height: 70px;
+    color: #fff;
+    font-size: 24px;
+    border-radius: 18px;
+    font-weight: bolder;
+    transition: all 0.3s;
+    background-color: #aa0;
+}
+
+#webapp_btn:hover {
+    color: #000;
+    background-color: #ff0;
+}
+
 footer {
     width: 100%; height: auto;
     margin-top: 18px;
-    background-color: #333;
     text-align: center;
+    background-color: #333;
 }
 
 footer #footer_nav {
-    background-color: #151515;
     padding: 10px 0;
+    background-color: #151515;
 }
 
 footer #footer_nav ul {
-    list-style: none;
     margin: 0;
     padding: 0;
+    list-style: none;
 }
 
 footer #footer_nav li {
@@ -230,16 +234,14 @@ footer #footer_nav li {
     font-size: smaller;
 }
 
-footer #footer_nav li:last-child {
-    padding: 0 7px;
-}
+footer #footer_nav li:last-child { padding: 0 7px; }
 
 footer #footer_nav li a {
-    padding: 3px 18px;
     color: #fff;
-    background-color: #660;
-    text-decoration: none;
+    padding: 3px 18px;
     border-radius: 18px;
+    text-decoration: none;
+    background-color: #660;
     transition: background-color 0.3s;
 }
 
@@ -267,8 +269,8 @@ footer small {
         z-index: 9999;
         color: #000;
         font-size: 300%;
-        border-radius: 7px;
         position: fixed;
+        border-radius: 7px;
         align-items: center;
         justify-content: center;
         transform: translateX(0);
@@ -323,38 +325,29 @@ footer small {
         margin-bottom: 3px;
     }
 
-    #global_navi ul li:first-child {
-        margin-top: 53px;
-    }
+    #global_navi ul li:first-child { margin-top: 53px; }
 
     #global_navi ul li a {
         padding: 7px;
         color: #fff;
         display: flex;
-        border-radius: 0;
-        border-bottom: #fff solid 2px;
-        font-weight: bolder;
         font-size: 24px;
+        border-radius: 0;
+        font-weight: bolder;
         text-decoration: none;
         background-color: #0000;
+        border-bottom: #fff solid 2px;
     }
 
-    #wrapper {
-        width: 95%;
-    }
+    #wrapper { width: 95%; }
 
     #name img {
         width: 90%;
         float: none;
     }
 
-    #name h1, #name p {
-        margin-left: 18px;
-    }
-
-    #name p {
-        font-size: 18px;
-    }
+    #name h1, #name p { margin-left: 18px; }
+    #name p { font-size: 18px; }
 
     .about_boxes h1 {
         font-size: 20px;
@@ -367,18 +360,14 @@ footer small {
         margin-bottom: 18px;
     }
 
-    table {
-        width: 100%;
-    }
+    table { width: 100%; }
 
     td {
         display: block;
         text-align: center;
     }
 
-    tbody td:first-child {
-        text-align: center;
-    }
+    tbody td:first-child { text-align: center; }
 
     tbody td:first-child {
         color: #fff;
@@ -389,24 +378,17 @@ footer small {
     thead td,
     tbody tr:last-child td:last-child,
     tbody tr:last-child td:first-child {
-        border-radius: 0;
         border: none;
+        border-radius: 0;
     }
 
-    #skill h1, #hobby h1, #L_locate h1 {
-        font-size: 24px;
-    }
+    #skill h1, #hobby h1, #L_locate h1 { font-size: 24px; }
 
     ul {
         font-size: 18px;
         margin-left: 10%;
     }
     
-    #L_locate p {
-        font-size: 18px;
-    }
-
-    #footer_nav {
-        display: none;
-    }
+    #L_locate p { font-size: 18px; }
+    #footer_nav { display: none; }
 }

@@ -41,12 +41,10 @@ td {
 }
 
 td:first-child {
-    /* width: 30%; */
     text-align: center;
     border-left: 1px solid #770;
 }
 
-/* td:last-child { width: 70%; } */
 thead td { border-radius: 18px 18px 0 0; }
 tbody tr:last-child td:last-child { border-radius: 0 0 18px 0; }
 tbody tr:last-child td:first-child { border-radius: 0 0 0 18px; }
@@ -96,18 +94,14 @@ textarea {
 }
 
 @media screen and (max-width: 700px) {
-    table {
-        width: 100%;
-    }
+    table { width: 100%; }
 
     td {
         display: block;
         text-align: center;
     }
 
-    tbody td:first-child {
-        text-align: center;
-    }
+    tbody td:first-child { text-align: center; }
 
     tbody td:first-child {
         color: #fff;
